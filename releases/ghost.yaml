@@ -5,8 +5,8 @@ metadata:
   name: ghost
   namespace: demo
   annotations:
-    fluxcd.io/automated: "false"
-    fluxcd.io/tag.chart-image: glob:3.1.1-debian-9-*
+    fluxcd.io/tag.chart-image: semver:*
+    fluxcd.io/automated: 'true'
 spec:
   releaseName: ghost
   chart:
@@ -15,8 +15,8 @@ spec:
     path: charts/ghost
   values:
     image:
-      repository: bitnami/ghost
-      tag: 3.1.2-r14
+      repository: gcr.io/github-action-example-project/static-site
+      tag: 0.0.1
     persistence:
       enabled: false
     resources:
