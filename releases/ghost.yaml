@@ -15,8 +15,7 @@ spec:
     path: charts/ghost
   values:
     image:
-      repository: gcr.io/github-action-example-project/static-site
-      tag: 0.0.1
+      repository: bitnami/ghost
     persistence:
       enabled: false
     resources:
