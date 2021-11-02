@@ -13,7 +13,7 @@ spec:
     matchLabels:
       app: "{{ template "ghost.fullname" . }}"
       release: {{ .Release.Name | quote }}
-  replicas: 1
+  replicas: 5
   template:
     metadata:
       labels:
