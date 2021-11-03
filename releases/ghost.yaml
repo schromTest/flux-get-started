@@ -15,7 +15,7 @@ spec:
     path: charts/ghost
   values:
     image:
-      repository: bitnami/ghost
+      repository: bitnami/ghost:4.20.4
     persistence:
       enabled: false
     resources:
